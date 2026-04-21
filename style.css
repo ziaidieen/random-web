@@ -1,57 +1,117 @@
-*, html, body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-    display: flex;
-    background-color: darkred;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: darkred;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
 }
 
 .logo {
-    color: snow;
-    margin-right: auto;
-    margin-left: 15px;
-    cursor: pointer;
-    transition: all .4s;
-    padding-top: 12px; padding-bottom: 12px;
+  color: snow;
+  margin-right: auto;
+  /* margin-left: 15px; */
+  cursor: pointer;
+  transition: all 0.4s;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .logo:hover {
-    color: greenyellow;
-    transform: rotate(180deg);
+  color: greenyellow;
+  transform: rotate(180deg);
 }
 
 nav ul {
-    display: flex;
-    padding: 12px;
+  display: flex;
+  padding: 12px;
 }
 
 li {
-    list-style-type: none;
-    padding: 12px;
+  list-style-type: none;
+  padding: 12px;
 }
 
 a {
-    color: snow;
-    text-decoration: none;
+  color: snow;
+  text-decoration: none;
 }
 
 .btn {
-    margin-right: 15px;
-    font-size: 1em;
-    padding: 6px 12px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    color: darkgreen;
-    background-color: greenyellow;
+  /* margin-left: auto; */
+  font-size: 1em;
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: darkgreen;
+  background-color: greenyellow;
 }
 
 /* .about {
     background-color: pink;
 } */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.img-anya {
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  padding: 12px;
+  /* background-color: pink; */
+}
+
+.parallax {
+  background-image: url("assets/img/chibi-nezuko.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: snow;
+  background-color: pink;
+  padding: 18px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
