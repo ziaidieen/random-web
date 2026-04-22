@@ -86,7 +86,7 @@ a {
 }
 
 .img-anya {
-  width: 90%;
+  width: 100%;
   max-width: 500px;
   height: auto;
   padding: 12px;
@@ -109,9 +109,50 @@ a {
   align-items: center;
   color: snow;
   background-color: pink;
-  padding: 18px;
+  padding: 15px;
 }
 
 .mt-12 {
   margin-top: 12px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.card-item {
+    width: 30%;
+    text-align: center;
+    color: green;
+    background: greenyellow;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    /* font-weight: bold; */
+}
+
+.card-desc {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card-item {
+        width: 95%;
+    }
+
+    .container {
+        /* padding: 0; */
+    }
+    
 }
