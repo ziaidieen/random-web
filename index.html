@@ -21,8 +21,8 @@
       </div>
     </div>
     <div class="parallax">
-      <div class="about">
-        <p class="title">Anya</p>
+      <div id="family" class="family">
+        <p class="title">Anya Forger</p>
         <p class="desc">Waku-waku!</p>
         <div class="mt-12">
           <button class="btn">Let's Go</button>
@@ -48,15 +48,20 @@
         </div>
       </div>
     </div>
-    <div class="footer">
-      <p>&copy; Anya Forger 2026</p>
-    </div>
+
+    <div id="footer"></div>
 
     <script>
       fetch("header.html")
         .then((res) => res.text())
         .then((html) => {
           document.getElementById("header").innerHTML = html;
+        });
+
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("footer").innerHTML = html;
         });
     </script>
   </body>
