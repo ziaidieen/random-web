@@ -7,17 +7,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1 class="logo">a Logo</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#wakuwaku">Waku Waku</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="btn">Follow Me!</button>
-    </header>
+    <div id="header"></div>
+
     <div class="container">
       <div class="introduction">
         <p class="title">Hello, here is Anya Forger</p>
@@ -60,5 +51,13 @@
     <div class="footer">
       <p>&copy; Anya Forger 2026</p>
     </div>
+
+    <script>
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("header").innerHTML = html;
+        });
+    </script>
   </body>
 </html>
